@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type = "text/javascript">
+      function display_student() {
+        document.write(this.name+": "+this.score+"<br>");
+      }
+      function Student (name_v, mid_v, final_v) {
+        this.name = name_v;
+        this.score = (mid_v+final_v)/2;
+        this.display = display_student;
+      }
+      var len_s = prompt("몇 명의 학생 성적을 입력하시겠습니까?");
+      var len = parseInt(len_s);
+      var max = 0;  //1등 구할 변수
+      var top_n;  //1등 이름
+      var st_s, st_n;  //st속성값 받음
+      for (i=0; i <len; i++){
+        var name_input = prompt((i+1)+"번째 학생 이름");
+        var mid_input_s = prompt((i+1)+"번째 학생 중간 성적");
+        var mid_input = parseInt(mid_input_s);
+        var final_input_s = prompt((i+1)+"번째 학생 기말 성적");
+        var final_input = parseInt(final_input_s);
+        var st = new Student(name_input, mid_input, final_input);
+        st.display();
+        st_s = st.score;
+        st_n = st.name;
+        if (st_s>max) {
+          max = st_s;
+          top_n = st_n;
+        }
+      } 
+      document.write("<br>1등 학생: "+ top_n);
+    </script>
+  </body>
+</html>

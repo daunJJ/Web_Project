@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body> 
+    <script type="text/javascript">
+      var height_str = prompt("키(cm)를 입력하세요");
+      var weight_str = prompt("몸무게(kg))를 입력하세요");
+      var height = parseInt(height_str)/100;
+      var weight = parseInt(weight_str);
+      
+      function bmi_f (ht, wt){
+        var bmi = wt/(ht*ht);
+        if (bmi >=30)
+          document.write("당신은 현재 [비만] 상태 입니다. 운동하세요!");
+        else if (bmi >=25 && bmi <30)
+          document.write("당신은 현재 [과체중] 상태 입니다. 조심하세요!");
+        else if (bmi >=18.5 && bmi <25)
+          document.write("당신은 현재 [정상] 입니다^^");
+        else if (bmi< 18.5)
+          document.write("당신은 현재 [저체중] 상태 입니다. 많이 드세요!");
+      }
+        
+        bmi_f(height, weight);
+    </script>
+  </body> 
+</html> 

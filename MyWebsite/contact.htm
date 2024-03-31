@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>정다운home</title>
+  <meta authors="정다운">
+  <meta charset="utf-8">   
+  <link rel="stylesheet" type="text/css" href="extern.css?ver=1"/>
+</head> 
+<body>
+<header class="bg">
+  <a id="logo" href="main.htm"> 정다운 Home </a><br><br>
+  e-mail: wjdekdns49@sm.ac.kr
+</header>
+    <h2>Contact</h2>
+      <fieldset>
+        <legend>신청자 정보</legend>
+        신청자: <input id="nameone" type="text" name="name" required><br>
+        연락처: <input id="pnum" type="tel" name="p_tel" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>시간 선택</legend>
+          <input id="dateone" type="date" name="date">
+          <input id="timeone" type="time" name="time" min="09:00" max="21:00">
+      </fieldset><br>
+      <fieldset>
+          <legend>요청사항</legend>
+          <textarea id="commentsone" name="comments" rows="3" cols="50"></textarea> 
+      </fieldset><br>
+      <fieldset>
+          <legend>신청정보확인</legend>
+          <p id="confirmone" name="confirm" rows="3" cols="50"></p> 
+      </fieldset><br>
+      <input type="submit" value="신청" onclick="update();">
+      <input type="reset" value="취소">
+  </body>
+<script type="text/javascript">
+  function update(){
+    var n1= document.getElementById("nameone").value; 
+    var n2=document.getElementById("pnum").value;
+    var n3=document.getElementById("dateone").value;
+    var n4=document.getElementById("timeone").value;
+    var n5=document.getElementById("commentsone").value;
+    n= "신청자: "+n1+", 연락처: "+n2+ ", 날짜: " + n3 + ", 시간: " +n4+"\n"+"요청사항: "+n5;
+    document.getElementById("confirmone").innerText=n;
+}
+</script>
+</html>

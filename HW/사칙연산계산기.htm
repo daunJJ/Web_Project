@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+      function cal(){
+        var a = document.getElementById("op1").value;
+        var b = document.getElementById("op2").value;
+        var c = document.getElementById("op").value;
+        if (c=="1")
+          document.getElementById("result").value = parseInt(a)+parseInt(b);
+        else if (c=="2")                                                                                       
+          document.getElementById("result").value = parseInt(a)-parseInt(b);
+        else if (c=="3")
+          document.getElementById("result").value = parseInt(a)*parseInt(b);
+        else if (c=="4")
+          document.getElementById("result").value = parseInt(a)/parseInt(b);
+      }
+    </script>
+    <form>
+      <input id="op1" type="text" size="2"/>
+      <select name="operation" id="op" size="1">
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+      </select>
+      <input id="op2" type="text" size="2"/>
+      <input type="button" value="=" onclick="cal();"/>
+      <input id="result" type="text" size="2"/>
+    </form>
+  </body>
+</html> 
+  

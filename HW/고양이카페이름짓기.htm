@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>고양이카페이름짓기</title>
+     <meta charset="utf-8">
+  <head> 
+  <body>
+    <script type = "text/javascript">
+      function makeName(loc){
+        var name = prompt("고양이의 이름을 지어주세요.");
+        if (loc=="1")
+          document.getElementById("target1").value = name;
+        else if (loc=="2")
+          document.getElementById("target2").value = name;
+        else if (loc=="3")
+          document.getElementById("target3").value = name;
+      }
+    </script>
+    <h2>고양이 이름</h2>
+    <table>
+      <tr>
+        <td>
+          <div>
+          <img onclick="makeName('1');" src="https://postfiles.pstatic.net/MjAyMjAxMjVfMTcw/MDAxNjQzMTAyOTg1NjY2.CnGtAfHsMeqzKuAXan3hk102JU0Cw6wM77Hr61YY81gg.BQQMgu9l_SEmNrUAkVF3SQ-VfRnbWZB3LX7cWXwFdmMg.JPEG.minziminzi128/IMG_7363.JPG?type=w966" width="150"><br> 
+            <input id="target1" type="text" size="2"/>
+        </td>
+        <td>
+          <div>
+          <img onclick="makeName('2');" src="https://postfiles.pstatic.net/MjAyMjAxMjVfMTg0/MDAxNjQzMTAyOTg1MTk5.LwwwrLcbDb1bLduwv6ESh4xjhzd2rrISw1Z-tD6QrjEg.0uM-on8OHR1FW-KNolOXq30XtpMCKS-X-JaYybhg1owg.JPEG.minziminzi128/IMG_7367.JPG?type=w966" width="150"><br>
+            <input id="target2" type="text" size="2"/>
+        </td>
+        <td>
+          <div id="3">
+          <img onclick="makeName('3');" src="https://postfiles.pstatic.net/MjAyMjAxMjVfMjMy/MDAxNjQzMTAyOTg1NzI0.bkW6TJVG82Gi8uG643n5SaSTYOyEcNAq0Y7xsEkOBSUg.rU7SY3uYHJGnigm3WzvBk0LkXt_cO6UOyVsfeKxbEPAg.JPEG.minziminzi128/IMG_7370.JPG?type=w966" width="150"><br>
+            <input id="target3" type="text" size="2"/>
+        </td>
+        </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="myCanvas" width="600" height="600"></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById("myCanvas");
+      var myContext = canvas.getContext("2d");
+
+      myContext.beginPath();
+      myContext.arc(300,200,80,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="red";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,70,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="orange";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,60,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="yellow";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,50,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="green";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,40,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="blue";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,30,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="navy";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,20,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="purple";
+      myContext.stroke();
+      myContext.fill();
+
+      myContext.beginPath();
+      myContext.arc(300,200,10,0,1*Math.PI,antiClockwise="True")
+      myContext.closePath();
+      myContext.fillStyle="white";
+      myContext.stroke(); 
+      myContext.fill();
+      
+      var dataURL = canvas.toDataURL();
+      document.getElementById("canvasImage").src = dataURL;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>정다운home</title>
+  <meta authors="정다운">
+  <meta charset="utf-8">   
+  <link rel="stylesheet" type="text/css" href="extern.css"/>
+</head>
+
+<body>
+<script type="text/javascript">
+  function button(){
+     var question= prompt("문의사항을 입력해주세요.");
+    document.write(question);
+}
+  function command(){
+    window.open("command.htm");
+}
+  function contact(){
+    window.open("contact.htm");
+}
+
+</script>
+<header>
+  <a id="logo" href="main.htm"> 정다운 Home </a><br><br>
+  e-mail: wjdekdns49@sm.ac.kr
+</header>
+
+<nav>
+  <ul>
+  <li><a href="personalinfo.htm">Personal Info</a></li>
+  <li><a href="internalactivities.htm">Internal Activities</a></li>
+  <li><a href="extracurricular.htm">Extracurricular Activities</a></li>
+  <li><a href="workexperience.htm">Work Experience</a></li>
+  <li><a href="award.htm">Award</a></li>
+  </ul>
+</nav>
+
+
+<article class="left">
+  <iframe name="display" src="noonsong.jpg" width="900" height="510"></iframe>
+</article>
+
+<aside class="right">
+  <input type="button" style="width:85;" value="문의사항" onclick="button();" /><br>
+  <input type="button"  style="width:85;" value="contact" onclick="contact();" /><br>
+  <input type="button" value="한줄쓰기" onclick="command();" /><br>
+</aside>
+<hr>
+
+<footer>
+작성자: 정다운
+</footer>
+</body>
+</html>

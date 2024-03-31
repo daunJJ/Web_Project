@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <table border="1">
+    <script type = "text/javascript">
+      var num_str1 = prompt("첫번째 정수를 입력하세요");
+      var num_str2 = prompt("두번째 정수를 입력하세요");
+      var num1 = parseInt(num_str1);
+      var num2 = parseInt(num_str2);
+      var plus = num1 + num2;
+      var minus = num1 - num2;
+      var multi= num1 * num2;
+      var div = num1 / num2;
+
+      document.write("<caption>사칙연산 결과표</caption>");
+      document.write("<tr>");
+      document.write("<th> 숫자 </th>");
+       document.write("<th>" + num1 + "</th>");
+      document.write("<th>" + num2 + "</th>");
+      document.write("</tr>");
+      document.write("<tr>");
+      document.write("<td> 더하기 </td>");
+      document.write("<td colspan='2'>" + plus+ "</td>");
+      document.write("</tr>")
+      document.write("<tr> <td> 빼기 </td> <td colspan='2'>" + minus + "</td> </tr>");
+      document.write("<tr> <td> 곱하기 </td> <td colspan='2'>" + multi + "</td> </tr>");
+      document.write("<tr> <td> 나누기 </td> <td colspan='2'>" + div + "</td> </tr>");
+    </script>
+    </table>
+  </body>
+</html>

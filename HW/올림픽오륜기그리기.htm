@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <canvas id="myCanvas" width="600" height="500"></canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var myContext = canvas.getContext("2d");
+    
+    myContext.beginPath();
+    myContext.lineWidth=10;
+    myContext.strokeStyle="blue"
+    myContext.arc(100, 100, 50, 0, 2*Math.PI);
+    myContext.stroke();
+
+    myContext.beginPath();
+    myContext.lineWidth=10;
+    myContext.strokeStyle="black"
+    myContext.arc(220, 100, 50, 0, 2*Math.PI);
+    myContext.stroke();
+
+    myContext.beginPath();
+    myContext.lineWidth=10;
+    myContext.strokeStyle="red"
+    myContext.arc(340, 100, 50, 0, 2*Math.PI);
+    myContext.stroke();
+
+    myContext.beginPath();
+    myContext.lineWidth=10;
+    myContext.strokeStyle="yellow"
+    myContext.arc(165, 150, 50, 0, 2*Math.PI);
+    myContext.stroke();
+
+    myContext.beginPath();
+    myContext.lineWidth=10;
+    myContext.strokeStyle="green"
+    myContext.arc(285, 150, 50, 0, 2*Math.PI);
+    myContext.stroke();
+    
+    var text="올림픽 오륜기";
+    myContext.font="Bold 25pt Arial";
+    myContext.fillText(text,120,250)
+
+  </script>
+</body>
+</html>

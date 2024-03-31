@@ -1,0 +1,15 @@
+header {height: 65px; vertical-align: middle; color:gray;}
+.left {float: left;}
+.right {float:right;}
+.bg {background-color: #D4F4FA;}
+
+#logo {color: cornflowerblue; font-size: 25px; float: left; vertical-align: middle;}
+table {table-layout: auto; widh: 90%}
+hr {clear: both;}
+h3{color:darkgray;}
+
+nav {width: 900px; margin: 0 0 20px 0; float:left;}
+nav ul li {float:left; margin:0 7px; list-style:none; font-size:20px; }
+nav a {height: 20px; display:block; padding:5px; color: lightsteelblue; }
+nav a:hover {color:steelblue;}
+footer {height:70px; magin: 20px 0 0 10px; float:left;}
