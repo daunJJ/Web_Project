@@ -1,4 +1,4 @@
-<h1 align="center"> 💬 Web_Project </h1>
+<h1 align="center">  🖥️ Web_Project </h1>
 <h4 align="center"> 22-1학기 웹프로그래밍기초 프로젝트 </h4>
 
 ## Introduction
